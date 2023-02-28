@@ -411,6 +411,7 @@
                 </div>
             </div>
         </div>
+        
         <div class="mobileHilang">
             <div class="container flex items-center justify-center md:flex-row py-8">
                 <div class="lg:mx-28 text-center md:text-left">
@@ -483,17 +484,17 @@
         </div>
     </section>
 
-    <section class="py-8">
+    <section class="py-8" x-intersect="$el.classList.add('fadeInUp')">
         <div class="hilang">
             <div
-                class="w-full container flex items-center justify-center px-14 p-8 space-y-10 space-x-10 text-center  rounded-xl shadow-2xl text-black ml-5">
+                class="w-full container flex items-center justify-center px-14 p-8 space-y-10 space-x-10 text-center  rounded-xl shadow-2xl text-black">
                 <div class="space-y-8">
                     <div>
-                        <h1 class="text-2xl text-primary">Favorite Quote <span class="text-secondary text-sm py-2">My
+                        <h1 x-intersect="$el.classList.add('scale')" class="text-2xl text-primary">Favorite Quote <span class="text-secondary text-sm py-2">My
                                 favorite motivational quote.</span> </h1>
                     </div>
                     <div>
-                        <div class="w-full px-14 p-8 space-y-8 bg-baju rounded-xl shadow-2xl text-black ml-5">
+                        <div x-intersect="$el.classList.add('scale')" class="w-full px-14 p-8 space-y-8 bg-baju rounded-xl shadow-2xl text-black">
                             <h2 class="text-2xl italic font-bold">"The best way to predict the future is to invent it."
                                 <br> <span class="text-sm font-bold">(Cara terbaik untuk memprediksi masa depan adalah
                                     dengan menciptakannya )</span><br> <span class="underline">Alan Kay.</span>
@@ -507,12 +508,12 @@
             <div
                 class="w-full container items-center justify-center px-14 p-8 space-y-10 space-x-10 text-center  rounded-xl shadow-2xl text-black">
                 <div>
-                    <h1 class="text-2xl text-primary">Favorite Quote <br> <span class="text-secondary text-sm py-2">My
+                    <h1 x-intersect="$el.classList.add('scale')" class="text-2xl text-primary">Favorite Quote <br> <span class="text-secondary text-sm py-2">My
                             favorite motivational quote.</span> </h1>
                 </div>
             </div>
             <div class="p-4 text-center space-y-4 bg-baju rounded-xl shadow-2xl text-black mx-5">
-                <h2 class="text-2xl italic font-bold">"The best way to predict the future is to invent it."
+                <h2 x-intersect="$el.classList.add('scale')" class="text-2xl italic font-bold">"The best way to predict the future is to invent it."
                     <br> <span class="text-sm font-bold space-y-0">(Cara terbaik untuk memprediksi masa depan adalah
                         dengan menciptakannya )</span><br> <span class="underline">Alan Kay.</span>
                 </h2>
