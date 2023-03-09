@@ -19,6 +19,8 @@
     <style>
 
     </style>
+    @livewireStyles
+    @livewireScripts
 </head>
 
 <body class="" x-data="{
@@ -88,16 +90,12 @@
                         class="p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                         <span class="sr-only">View notifications</span>
                         <!-- Heroicon name: outline/bell -->
-                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M13 10V3L4 14h7v7l9-11h-7z" />
-                        </svg>
+                        
                     </button>
                     <label class="swap">
                         <input type="checkbox" />
-                        <div class="swap-off btn bg-[#F8E305] text-hitam">WebDev</div>
-                        <div class="swap-on btn bg-primary text-dilogo">MusicProd</div>
+                        <div class="swap-on btn btn-sm bg-[#F8E305] text-hitam">Switch <img src="/img/web.png" width="20" height="20" alt="" class="mx-2"> WebDev</div>
+                        <div class="swap-off btn btn-sm bg-primary text-dilogo">Switch <img src="/img/music.png" width="20" height="20" alt="" class="mx-2"> MusicProd</div>
                     </label>
 
 
@@ -220,131 +218,10 @@
     </section>
     {{-- ----------- --}}
 
-    <section class="py-10">
-        <h1 class="text-center lg:text-2xl font-bold py-2">
-            My Coding Projects
-        </h1>
-        <hr class="my-5 mx-10 opacity-10 text-primary">
-        <div class="hilang">
-            <div class="flex py-8 px-16">
-                <div class="w-1/2 p-6">
-                    <img x-intersect="$el.classList.add('fadeInUp')" class="shadow-sm rounded-lg"
-                        src="img/upperclass.png" alt="Gambar dengan shadow dan glow">
-                </div>
-                <div class="w-1/2 p-6">
-                    <h2 x-intersect="$el.classList.add('fadeInUp')" class="text-2xl font-bold mb-4 text-primary">
-                        Upperclass Indonesia</h2>
-                    <p x-intersect="$el.classList.add('fadeInUp')" class="text-secondary leading-relaxed">Aplikasi
-                        E-Commerce untuk penjualan barang salon kecantikan dan sarang burung walet.</p>
+    {{-- project --}}
+    @livewire('projects')
 
-                    <div x-intersect="$el.classList.add('fadeInUp')" class="flex">
-                        <div class="w-1/2 p-6">
-                            <p><i class="fa-regular fa-circle-check text-btnBg"></i> Laravel</p>
-                            <p><i class="fa-regular fa-circle-check text-btnBg"></i> Jquery</p>
-                        </div>
-                        <div class="w-1/2 p-6">
-                            <p><i class="fa-regular fa-circle-check text-btnBg"></i> Bootstrap</p>
-                        </div>
-                    </div>
-                    <a href="https://upperclassindonesia.com/" target="_blank"
-                        x-intersect="$el.classList.add('fadeInUp')"
-                        class="leading-relaxed rounded hover:bg-primary bg-baju text-hitam border border-spacing-4 py-2 px-2"><i
-                            class="fa-solid fa-link "></i> View Demo</a>
-                </div>
-            </div>
-            <div class="flex py-8 px-16">
-                <div class="w-1/2 p-6">
-                    <img x-intersect="$el.classList.add('fadeInUp')" class="shadow-sm rounded-lg"
-                        src="img/upperclass.png" alt="Gambar dengan shadow dan glow">
-                </div>
-                <div class="w-1/2 p-6">
-                    <h2 x-intersect="$el.classList.add('fadeInUp')" class="text-2xl font-bold mb-4 text-primary">
-                        Upperclass Indonesia</h2>
-                    <p x-intersect="$el.classList.add('fadeInUp')" class="text-secondary leading-relaxed">Aplikasi
-                        E-Commerce untuk penjualan barang salon kecantikan dan sarang burung walet.</p>
-
-                    <div x-intersect="$el.classList.add('fadeInUp')" class="flex">
-                        <div class="w-1/2 p-6">
-                            <p><i class="fa-regular fa-circle-check text-btnBg"></i> Laravel</p>
-                            <p><i class="fa-regular fa-circle-check text-btnBg"></i> Jquery</p>
-                        </div>
-                        <div class="w-1/2 p-6">
-                            <p><i class="fa-regular fa-circle-check text-btnBg"></i> Bootstrap</p>
-                        </div>
-                    </div>
-                    <a href="https://upperclassindonesia.com/" target="_blank"
-                        x-intersect="$el.classList.add('fadeInUp')"
-                        class="leading-relaxed rounded hover:bg-primary bg-baju text-hitam border border-spacing-4 py-2 px-2"><i
-                            class="fa-solid fa-link "></i> View Demo</a>
-                </div>
-            </div>
-        </div>
-        <div class="mobileHilang">
-            <div class="container flex items-center justify-center md:flex-row py-8">
-                <div class="lg:mx-28 text-center md:text-left">
-                    <div class="m-8 relative space-y-4">
-                        <h2 x-intersect="$el.classList.add('fadeInUp')" class="text-2xl font-bold mb-4 text-primary">
-                            Upperclass Indonesia</h2>
-                        <img x-intersect="$el.classList.add('fadeInUp')" class="shadow-sm rounded-lg"
-                            src="img/upperclass.png" alt="Gambar dengan shadow dan glow">
-                        <p x-intersect="$el.classList.add('fadeInUp')" class="text-secondary leading-relaxed">Aplikasi
-                            E-Commerce untuk penjualan barang salon kecantikan dan sarang burung walet. </p>
-                    </div>
-                    <div x-intersect="$el.classList.add('fadeInUp')" class="flex pb-5">
-                        <div class="w-1/2">
-                            <p><i class="fa-regular fa-circle-check text-btnBg"></i> Laravel</p>
-                            <p><i class="fa-regular fa-circle-check text-btnBg"></i> Jquery</p>
-                        </div>
-                        <div class="w-1/2">
-                            <p><i class="fa-regular fa-circle-check text-btnBg"></i> Bootstrap</p>
-                        </div>
-                    </div>
-                    <a href="https://upperclassindonesia.com/" target="_blank"
-                        x-intersect="$el.classList.add('fadeInUp')"
-                        class="leading-relaxed rounded hover:bg-primary bg-baju text-hitam border border-spacing-4 py-2 px-2"><i
-                            class="fa-solid fa-link "></i> View Demo</a>
-                </div>
-            </div>
-            <div class="container flex items-center justify-center md:flex-row py-8">
-                <div class="lg:mx-28 text-center md:text-left">
-                    <div class="m-8 relative space-y-4">
-                        <h2 x-intersect="$el.classList.add('fadeInUp')" class="text-2xl font-bold mb-4 text-primary">
-                            Upperclass Indonesia</h2>
-                        <img x-intersect="$el.classList.add('fadeInUp')" class="shadow-sm rounded-lg"
-                            src="img/upperclass.png" alt="Gambar dengan shadow dan glow">
-                        <p x-intersect="$el.classList.add('fadeInUp')" class="text-secondary leading-relaxed">Aplikasi
-                            E-Commerce untuk penjualan barang salon kecantikan dan sarang burung walet.</p>
-                    </div>
-                    <div x-intersect="$el.classList.add('fadeInUp')" class="flex pb-5">
-                        <div class="w-1/2">
-                            <p><i class="fa-regular fa-circle-check text-btnBg"></i> Laravel</p>
-                            <p><i class="fa-regular fa-circle-check text-btnBg"></i> Jquery</p>
-                        </div>
-                        <div class="w-1/2">
-                            <p><i class="fa-regular fa-circle-check text-btnBg"></i> Bootstrap</p>
-                        </div>
-                    </div>
-                    <a href="https://upperclassindonesia.com/" target="_blank"
-                        x-intersect="$el.classList.add('fadeInUp')"
-                        class="leading-relaxed rounded hover:bg-primary bg-baju text-hitam border border-spacing-4 py-2 px-2"><i
-                            class="fa-solid fa-link "></i> View Demo</a>
-                </div>
-            </div>
-
-
-
-        </div>
-
-
-    </section>
-    {{-- btn loadmore --}}
-    <div style="margin-top: -50px;" class="pb-5 my-16 mx-16 flex items-center justify-center md:flex-row"
-        x-intersect="$el.classList.add('fadeInUp')">
-        <button class="btn btn-block btn-outline text-baju hover:bg-secondary">
-            Load More
-            <i class="fa-solid fa-angles-right ml-2"></i>
-        </button>
-    </div>
+    {{-- -------------- --}}
 
     <section class="py-10">
         <div class="hilang">
@@ -411,7 +288,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="mobileHilang">
             <div class="container flex items-center justify-center md:flex-row py-8">
                 <div class="lg:mx-28 text-center md:text-left">
@@ -490,11 +367,13 @@
                 class="w-full container flex items-center justify-center px-14 p-8 space-y-10 space-x-10 text-center  rounded-xl shadow-2xl text-black">
                 <div class="space-y-8">
                     <div>
-                        <h1 x-intersect="$el.classList.add('scale')" class="text-2xl text-primary">Favorite Quote <span class="text-secondary text-sm py-2">My
+                        <h1 x-intersect="$el.classList.add('scale')" class="text-2xl text-primary">Favorite Quote
+                            <span class="text-secondary text-sm py-2">My
                                 favorite motivational quote.</span> </h1>
                     </div>
                     <div>
-                        <div x-intersect="$el.classList.add('scale')" class="w-full px-14 p-8 space-y-8 bg-baju rounded-xl shadow-2xl text-black">
+                        <div x-intersect="$el.classList.add('scale')"
+                            class="w-full px-14 p-8 space-y-8 bg-baju rounded-xl shadow-2xl text-black">
                             <h2 class="text-2xl italic font-bold">"The best way to predict the future is to invent it."
                                 <br> <span class="text-sm font-bold">(Cara terbaik untuk memprediksi masa depan adalah
                                     dengan menciptakannya )</span><br> <span class="underline">Alan Kay.</span>
@@ -508,18 +387,21 @@
             <div
                 class="w-full container items-center justify-center px-14 p-8 space-y-10 space-x-10 text-center  rounded-xl shadow-2xl text-black">
                 <div>
-                    <h1 x-intersect="$el.classList.add('scale')" class="text-2xl text-primary">Favorite Quote <br> <span class="text-secondary text-sm py-2">My
+                    <h1 x-intersect="$el.classList.add('scale')" class="text-2xl text-primary">Favorite Quote <br>
+                        <span class="text-secondary text-sm py-2">My
                             favorite motivational quote.</span> </h1>
                 </div>
             </div>
             <div class="p-4 text-center space-y-4 bg-baju rounded-xl shadow-2xl text-black mx-5">
-                <h2 x-intersect="$el.classList.add('scale')" class="text-2xl italic font-bold">"The best way to predict the future is to invent it."
+                <h2 x-intersect="$el.classList.add('scale')" class="text-2xl italic font-bold">"The best way to
+                    predict the future is to invent it."
                     <br> <span class="text-sm font-bold space-y-0">(Cara terbaik untuk memprediksi masa depan adalah
                         dengan menciptakannya )</span><br> <span class="underline">Alan Kay.</span>
                 </h2>
             </div>
         </div>
     </section>
+
 </body>
 
 </html>
