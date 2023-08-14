@@ -75,11 +75,11 @@
 
     </section>
     {{-- btn loadmore --}}
-    @if ($total != $count)
+    @if ($count - $total > 0)
     <div style="margin-top: -40px;" class="pb-5 my-16 mx-16 flex items-center justify-center md:flex-row"
         x-intersect="$el.classList.add('scale')">
         <button wire:click="loadData" class="btn btn-block btn-outline text-baju hover:bg-secondary">
-            Load More 
+            Load More {{ $count - $total < 0 ? '' : $count - $total }} Projects
             <i class="fa-solid fa-angles-right ml-2"></i>
         </button>
     </div>
