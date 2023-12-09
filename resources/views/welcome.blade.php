@@ -54,9 +54,9 @@
             'img': 'https://laracasts.com/images/topics/icons/alpine-logo.svg'
         },
         {
-            title: 'React JS',
+            title: 'Nuxt JS',
             deskripsi: 'Front-End Development',
-            'img': 'https://laracasts.com/images/topics/icons/react-logo.svg'
+            'img': 'https://laracasts.com/images/topics/icons/nuxtjs-logo.svg?v=2'
         },
         {
             title: 'Inertia',
